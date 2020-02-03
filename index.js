@@ -27,9 +27,12 @@ app.get('/info', (req, res) => {
 })
 
 app.get('/api/persons', (req, res) => {
+    /*
     Person.find({}).then(persons => {
         res.json(persons.map(person => person.toJSON()))
     })
+    */
+    return [{ name: "Charlie", number: "980937597398759" }]
 })
 
 app.get('/api/persons/:id', (request, response, next) => {
