@@ -32,7 +32,8 @@ app.get('/api/persons', (req, res) => {
         res.json(persons.map(person => person.toJSON()))
     })
     */
-    return [{ name: "Charlie", number: "980937597398759" }]
+    res.json([{ name: "Charlie", number: "980937597398759" }])
+
 })
 
 app.get('/api/persons/:id', (request, response, next) => {
